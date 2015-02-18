@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.label1 = new System.Windows.Forms.Label();
+            this.btnUpdates = new System.Windows.Forms.Button();
             this.outlook = new System.Windows.Forms.PictureBox();
             this.excel = new System.Windows.Forms.PictureBox();
             this.word = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnProxy = new System.Windows.Forms.Button();
             this.btnAdapters = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.outlook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.excel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
@@ -49,12 +51,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 353);
+            this.label1.Location = new System.Drawing.Point(0, 384);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "                                 ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnUpdates
+            // 
+            this.btnUpdates.Image = global::NetworkUtil.Properties.Resources.Apps_system_software_update_icon;
+            this.btnUpdates.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdates.Location = new System.Drawing.Point(23, 347);
+            this.btnUpdates.Name = "btnUpdates";
+            this.btnUpdates.Size = new System.Drawing.Size(191, 45);
+            this.btnUpdates.TabIndex = 6;
+            this.btnUpdates.Text = "Windows Updates";
+            this.btnUpdates.UseVisualStyleBackColor = true;
+            this.btnUpdates.Click += new System.EventHandler(this.btnUpdates_Click);
             // 
             // outlook
             // 
@@ -103,7 +117,7 @@
             this.button4.Location = new System.Drawing.Point(23, 302);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(191, 45);
-            this.button4.TabIndex = 6;
+            this.button4.TabIndex = 5;
             this.button4.Text = "Device Manager";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -115,7 +129,7 @@
             this.button3.Location = new System.Drawing.Point(23, 257);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 45);
-            this.button3.TabIndex = 5;
+            this.button3.TabIndex = 4;
             this.button3.Text = "System Properties";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -127,7 +141,7 @@
             this.button2.Location = new System.Drawing.Point(23, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(191, 45);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Windows Firewall";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -139,7 +153,7 @@
             this.button1.Location = new System.Drawing.Point(23, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 45);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Control Panel";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -151,7 +165,7 @@
             this.btnProxy.Location = new System.Drawing.Point(23, 122);
             this.btnProxy.Name = "btnProxy";
             this.btnProxy.Size = new System.Drawing.Size(191, 45);
-            this.btnProxy.TabIndex = 0;
+            this.btnProxy.TabIndex = 1;
             this.btnProxy.Text = "Proxy Settings";
             this.btnProxy.UseVisualStyleBackColor = true;
             this.btnProxy.Click += new System.EventHandler(this.btnProxy_Click);
@@ -173,7 +187,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(238, 375);
+            this.ClientSize = new System.Drawing.Size(237, 406);
+            this.Controls.Add(this.btnUpdates);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.outlook);
             this.Controls.Add(this.excel);
@@ -192,7 +207,7 @@
             this.Name = "frmMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "System Utilities Shortcuts.";
+            this.Text = "System Utilities Shortcuts";
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.outlook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.excel)).EndInit();
@@ -216,6 +231,8 @@
         private System.Windows.Forms.PictureBox excel;
         private System.Windows.Forms.PictureBox outlook;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUpdates;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

@@ -54,7 +54,7 @@
     <ApplicationIcon>nu.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>605CEDA091A5EA72A0504D1D61119411F1FF0596</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>74433F6163F6296EA9ADDB0D4F369B9871EACB55</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>NetworkUtil_TemporaryKey.pfx</ManifestKeyFile>
@@ -113,6 +113,8 @@
   <ItemGroup>
     <Content Include="Delacro-Id-Network.ico" />
     <Content Include="nu.ico" />
+    <None Include="Resources\Apps-system-software-update-icon1.png" />
+    <None Include="Resources\Apps-system-software-update-icon %281%291.png" />
     <None Include="Resources\Outlook-icon.png" />
     <None Include="Resources\Excel-icon.png" />
     <None Include="Resources\Word-icon.png" />

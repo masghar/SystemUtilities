@@ -126,5 +126,12 @@ namespace NetworkUtil
         {
             MessageBox.Show("Ding Dong.......:)...");
         }
+
+        private void btnUpdates_Click(object sender, EventArgs e)
+        {
+            proc.FileName = @"C:\Windows\System32\rundll32.exe";
+            proc.Arguments = "url.dll,FileProtocolHandler wuapp.exe";
+            System.Diagnostics.Process.Start(proc);
+        }
     }
 }
