@@ -73,6 +73,16 @@ namespace NetworkUtil.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap App_service_manager_icon {
+            get {
+                object obj = ResourceManager.GetObject("App-service-manager-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Apps_system_software_update_icon {
             get {
                 object obj = ResourceManager.GetObject("Apps-system-software-update-icon", resourceCulture);
@@ -93,9 +103,49 @@ namespace NetworkUtil.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Apps_Task_Manager_alt_1_Metro_icon {
+            get {
+                object obj = ResourceManager.GetObject("Apps-Task-Manager-alt-1-Metro-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Computer_icon {
+            get {
+                object obj = ResourceManager.GetObject("Computer-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Computer_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Computer-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap control {
             get {
                 object obj = ResourceManager.GetObject("control", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap data_info_icon {
+            get {
+                object obj = ResourceManager.GetObject("data-info-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +183,16 @@ namespace NetworkUtil.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_icon {
+            get {
+                object obj = ResourceManager.GetObject("logout-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap notepad_icon {
             get {
                 object obj = ResourceManager.GetObject("notepad-icon", resourceCulture);
@@ -153,9 +213,59 @@ namespace NetworkUtil.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PadLock_icon {
+            get {
+                object obj = ResourceManager.GetObject("PadLock-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap proxy {
             get {
                 object obj = ResourceManager.GetObject("proxy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutdown_icon {
+            get {
+                object obj = ResourceManager.GetObject("shutdown-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_LogOff_icon {
+            get {
+                object obj = ResourceManager.GetObject("Sign-LogOff-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sleep_mode_prolonged_icon {
+            get {
+                object obj = ResourceManager.GetObject("sleep-mode-prolonged-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sound_on_icon {
+            get {
+                object obj = ResourceManager.GetObject("Sound-on-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

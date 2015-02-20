@@ -54,10 +54,11 @@
     <ApplicationIcon>nu.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>74433F6163F6296EA9ADDB0D4F369B9871EACB55</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>605CEDA091A5EA72A0504D1D61119411F1FF0596</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>NetworkUtil_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -113,6 +114,17 @@
   <ItemGroup>
     <Content Include="Delacro-Id-Network.ico" />
     <Content Include="nu.ico" />
+    <None Include="Resources\data-info-icon.png" />
+    <None Include="Resources\Computer-icon1.png" />
+    <None Include="Resources\Sound-on-icon.png" />
+    <None Include="Resources\Computer-icon.png" />
+    <None Include="Resources\Apps-Task-Manager-alt-1-Metro-icon.png" />
+    <None Include="Resources\App-service-manager-icon.png" />
+    <None Include="Resources\PadLock-icon.png" />
+    <None Include="Resources\logout-icon.png" />
+    <None Include="Resources\sleep-mode-prolonged-icon.png" />
+    <None Include="Resources\Sign-LogOff-icon.png" />
+    <None Include="Resources\shutdown-icon.png" />
     <None Include="Resources\Apps-system-software-update-icon1.png" />
     <None Include="Resources\Apps-system-software-update-icon %281%291.png" />
     <None Include="Resources\Outlook-icon.png" />
