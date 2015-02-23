@@ -325,9 +325,10 @@
             // 
             // btnAdapters
             // 
+            this.btnAdapters.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::NetworkUtil.Properties.Settings.Default, "loc", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.btnAdapters.Image = global::NetworkUtil.Properties.Resources.adapters;
             this.btnAdapters.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdapters.Location = new System.Drawing.Point(23, 77);
+            this.btnAdapters.Location = global::NetworkUtil.Properties.Settings.Default.loc;
             this.btnAdapters.Name = "btnAdapters";
             this.btnAdapters.Size = new System.Drawing.Size(191, 45);
             this.btnAdapters.TabIndex = 0;
@@ -374,6 +375,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Utilities Shortcuts";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

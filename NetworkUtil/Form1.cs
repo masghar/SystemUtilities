@@ -19,11 +19,25 @@ namespace NetworkUtil
         public static extern void LockWorkStation();
         System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
         string systemDir = Environment.SystemDirectory;
+       
         public frmMain()
         {
            InitializeComponent();
+           Helper.ControlMover.Init(this.btnAdapters);
+           Helper.ControlMover.Init(this.btnProxy);
+           //var c = GetAll(this, typeof(Button));
+          // int totalControls = c.Count();
+          // MessageBox.Show("Total Controls: " + totalControls);
+           
         }
+        public IEnumerable<Control> GetAll(Control control, Type type)
+        {
+            var controls = control.Controls.Cast<Control>();
 
+            return controls.SelectMany(ctrl => GetAll(ctrl, type))
+                                      .Concat(controls)
+                                      .Where(c => c.GetType() == type);
+        }
         private void btnAdapters_Click(object sender, EventArgs e)
         {
 
@@ -59,7 +73,7 @@ namespace NetworkUtil
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            btnAdapters.Location = Properties.Settings.Default.loc;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -227,6 +241,12 @@ namespace NetworkUtil
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             LockWorkStation(); 
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.loc = btnAdapters.Location;
+            Properties.Settings.Default.Save();
         }
 
     }
