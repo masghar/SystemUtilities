@@ -251,7 +251,9 @@ namespace NetworkUtil
 
         private void linkLabel1_LinkClicked_2(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             MessageBox.Show("m.muhammad.asghar@gmail.com");
+            Process.Start("mailto:m.muhammad.asghar@gmail.com");
         }
 
     }
