@@ -224,23 +224,41 @@ namespace NetworkUtil
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            DialogResult r = MessageBox.Show("Sure?","",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+            if(r==DialogResult.Yes){
             Process.Start("shutdown", "/s /t 0");
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Process.Start("shutdown",
-"/r /t 0");
+             DialogResult r = MessageBox.Show("Sure?","",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+             if (r == DialogResult.Yes)
+             {
+                 Process.Start("shutdown",
+     "/r /t 0");
+             }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            ExitWindowsEx(0, 0);
+             DialogResult r = MessageBox.Show("Sure?","",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+             if (r == DialogResult.Yes)
+             {
+                 ExitWindowsEx(0, 0);
+             }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
+        { DialogResult r = MessageBox.Show("Sure?","",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+        if (r == DialogResult.Yes)
         {
-            LockWorkStation(); 
+            LockWorkStation();
+        }
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
