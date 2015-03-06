@@ -8,6 +8,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using ScreenShot;
+using System.Drawing.Imaging;
+
 
 namespace NetworkUtil
 {
@@ -272,6 +275,19 @@ namespace NetworkUtil
             
             MessageBox.Show("m.muhammad.asghar@gmail.com");
             Process.Start("mailto:m.muhammad.asghar@gmail.com");
+        }
+
+        private void btnCapture_Click(object sender, EventArgs e)
+        {
+            ScreenShot.ScreenCapture sc = new ScreenCapture();
+            // capture entire screen, and save it to a file
+            Image img = sc.CaptureScreen();
+            // display image in a Picture control named imageDisplay
+           // this.imageDisplay.Image = img;
+            // capture this window, and save it
+            string name = DateTime.Now.ToString();
+            name = name.Replace(':','-');
+            sc.CaptureScreenToFile(@"D:\" + name + ".png", ImageFormat.Png);
         }
 
     }
