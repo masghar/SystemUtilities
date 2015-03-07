@@ -290,5 +290,10 @@ namespace NetworkUtil
             sc.CaptureScreenToFile(@"D:\" + name + ".png", ImageFormat.Png);
         }
 
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           // linkLabel2.Text= 
+        }
+
     }
 }
